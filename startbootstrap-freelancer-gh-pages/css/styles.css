@@ -6665,6 +6665,11 @@ textarea.form-control-lg {
   background-color: RGBA(44, 62, 80, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-tertiary {
+    color: #fff !important;
+    background-color: RGBA(250, 129, 40, var(--bs-bg-opacity, 1)) !important;
+}
+
 .text-bg-success {
   color: #fff !important;
   background-color: RGBA(25, 135, 84, var(--bs-bg-opacity, 1)) !important;
@@ -11029,6 +11034,10 @@ html {
   font-size: 2.25rem;
   line-height: 2rem;
 }
+
+
+
+
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
     font-size: 3rem;
