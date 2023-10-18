@@ -10981,8 +10981,7 @@ html {
 .masthead .masthead-avatar {
   width: 15rem;
 }
-.masthead .masthead-avatar2 {
-  width: 15rem;
+.top-layer {
   position: absolute;
 }
 
