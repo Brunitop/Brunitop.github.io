@@ -10981,10 +10981,7 @@ html {
 .masthead .masthead-avatar {
   width: 15rem;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  top: center;
 }
 
 @media (min-width: 992px) {
