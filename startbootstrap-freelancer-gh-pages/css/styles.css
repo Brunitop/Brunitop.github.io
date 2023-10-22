@@ -11088,18 +11088,6 @@ video {
   background-color: #1a252f;
 }
 
-chart-one (
-		svgSize: 200px,
-		percentage: 25,
-		strokeWidth: 1px,
-		backgroundColor: #305556,
-		foregroundColor: #79be9b,
-		labelColor: #c6e8d7,
-		labelFontSize: 2.5rem,
-		duration: 3s,
-		animationDelay: 1s
-)
-
 .pie {
   --w:150px;
 
