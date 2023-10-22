@@ -488,8 +488,8 @@ progress {
   display: none !important;
 }
 
-.lead {
-  font-size: 0.8rem;
+.lead1 {
+  font-size: 1.2rem;
   font-weight: 250;
 }
 
@@ -11139,8 +11139,4 @@ video {
 }
 @keyframes p {
   from{--p:0}
-}
-
-chart-text {
-    font:
 }
