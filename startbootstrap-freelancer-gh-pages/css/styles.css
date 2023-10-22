@@ -11088,12 +11088,6 @@ video {
   background-color: #1a252f;
 }
 
-@property --p{
-  syntax: '<number>';
-  inherits: true;
-  initial-value: 0;
-}
-
 .pie {
   --p:20;
   --b:22px;
@@ -11138,9 +11132,11 @@ video {
 .no-round:after {
   content:none;
 }
+@property --p{
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
 @keyframes p {
   from{--p:0}
-}
-body {
-  background:#f2f2f2;
 }
