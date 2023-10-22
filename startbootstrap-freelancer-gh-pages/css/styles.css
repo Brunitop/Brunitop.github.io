@@ -11101,7 +11101,34 @@ chart-one (
 )
 
 .animate {
-		svg .circle-foreground {
+	svg .circle-foreground {
 		animation: offset map-get($param, duration) ease-in-out forwards;
 		animation-delay: map-get($param, animationDelay);
+	}
+	figcaption:after {
+		animation: #{$chart}-label map-get($param, duration) steps(map-get($param, percentage)) forwards;
+		animation-delay: map-get($param, animationDelay);
+	}
+}
+
+svg {
+	width: 100%;
+    height: 100%;
+	.circle-background {
+		r: (map-get($param, svgSize) - map-get($param, strokeWidth))/2;
+		cx: 50%;
+		cy: 50%;
+		fill: none;
+		stroke: map-get($param, backgroundColor);
+		stroke-width: map-get($param, strokeWidth);
+	}
+	.circle-foreground {
+		@extend .circle-background;
+		stroke: map-get($param, foregroundColor);
+		stroke-dasharray: $cOffSet $c;
+		stroke-dashoffset: $cOffSet;
+		stroke-linecap: round;
+		transform-origin: 50% 50%;
+		transform: rotate(-90deg);
+	}
 }
