@@ -11099,3 +11099,9 @@ chart-one (
 		duration: 3s,
 		animationDelay: 1s
 )
+
+.animate {
+		svg .circle-foreground {
+		animation: offset map-get($param, duration) ease-in-out forwards;
+		animation-delay: map-get($param, animationDelay);
+}
