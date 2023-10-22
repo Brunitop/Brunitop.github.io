@@ -11121,6 +11121,12 @@ video {
 .animate {
   animation:p 1s .5s both;
 }
+.no-round:before {
+  background-size:0 0,auto;
+}
+.no-round:after {
+  content:none;
+}
 @property --p{
   syntax: '<number>';
   inherits: true;
