@@ -50,5 +50,18 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+    $(document).ready(function(){
+        $('.play').click(function () {
+            if($(this).parent().prev().get(0).paused){
+                $(this).parent().prev().get(0).play();
+                $(this).parent().prev().removeClass('blurEffect');
+                $('.video-content').hide();
+            }
+        });
 
+        $('.video').on('ended',function(){
+            $(this).addClass('blurEffect');
+          $('.content').show();
+        });
+    })
 });

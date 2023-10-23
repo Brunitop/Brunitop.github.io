@@ -11064,11 +11064,47 @@ html {
     align-items: center;
     height: 50vh; /* Adjust the height as needed */
 }
-
 video {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
 }
+.wrapper {
+    position: relative;
+    display: inline-block;
+}
+.blurEffect {
+    -webkit-filter: blur(7px);
+    -o-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+}
+
+.video-content {
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+}
+
+.play {
+    font-size: 50px;
+    cursor: pointer;
+    border: 1px solid #FFF;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 25px;
+}
+
+.play:hover {
+    color: red;
+}
+
 
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
@@ -11141,26 +11177,114 @@ video {
   from{--p:0}
 }
 
-.progress {
-  margin: 50px auto;
-  padding: 2px;
-  width: 100%;
-  max-width: 1000px;
-  background: white;
-  border: 3px solid #000;
-  border-radius: 20px;
-  height: 30px;
+.skills h2 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: black;
 }
-.progress .progress__bar {
-  height: 100%;
-  width: 5%;
-  border-radius: 15px;
-  background: repeating-linear-gradient(
-    135deg,
-    #036ffc,
-    #036ffc 20px,
-    #1163cf 20px,
-    #1163cf 40px
-  );
-  animation: fill-bar 3s;
+.progress-bar {
+    background: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+    overflow: visible;
+}
+.progress-bar div {
+    background: blue;
+    height: 10px;
+    border-radius: 5px;
+    width: 50%;
+}
+.progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.java {
+    animation: java 1s linear forwards;
+}
+.python {
+    animation: python 1s linear forwards;
+}
+.csharp {
+    animation: csharp 1s linear forwards;
+}
+.html {
+    animation: html 1s linear forwards;
+}
+.css {
+    animation: css 1s linear forwards;
+}
+.vue {
+    animation: vue 1s linear forwards;
+}
+.flask {
+    animation: flask 1s linear forwards;
+}
+.java span {
+    border: 2px solid blue;
+}
+.python span {
+    border: 2px solid blue;
+}
+.csharp span {
+    border: 2px solid blue;
+}
+.html span {
+    border: 2px solid blue;
+}
+.css span {
+    border: 2px solid blue;
+}
+.vue span {
+    border: 2px solid blue;
+}
+.flask span {
+    border: 2px solid blue;
+}
+@keyframes java {
+    100%{
+        width: 80%;
+    }
+}
+@keyframes python {
+    100%{
+        width: 75%;
+    }
+}
+@keyframes csharp {
+    100%{
+        width: 57%;
+    }
+}
+@keyframes html {
+    100%{
+        width: 86%;
+    }
+}
+@keyframes css {
+    100%{
+        width: 60%;
+    }
+}
+@keyframes vue {
+    100%{
+        width: 26%;
+    }
+}
+@keyframes flask {
+    100%{
+        width: 54%;
+    }
 }
